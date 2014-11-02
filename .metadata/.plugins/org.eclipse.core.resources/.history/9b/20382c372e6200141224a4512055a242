@@ -13,11 +13,6 @@ public class TicTacToe
 		this.turn = 'X';
 	}
 	
-	public String toString()
-	{
-		return new String(grid);
-	}
-	
 	public static void main(String[] args)
 	{
 		TicTacToe ttt = new TicTacToe();
@@ -30,6 +25,4 @@ public class TicTacToe
 			System.out.println();
 		}
 	}
-	
-
 }

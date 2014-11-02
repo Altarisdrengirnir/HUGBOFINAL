@@ -1,0 +1,33 @@
+package Altaris;
+
+import static org.junit.Assert.*;
+
+import org.junit.Test;
+
+
+public class tests
+{
+	@Test
+	public void testNew() throws Exception
+	{
+		TicTacToe ttt = new TicTacToe();
+		//			  012345678
+		assertEquals("---------", ttt.toString());
+		assertEquals('X', ttt.turn);
+	}
+	
+	public static void main(String[] args)
+	{
+		TicTacToe ttt = new TicTacToe();
+		for(int j = 0; j < ttt.GRIDLINE; j++)
+		{
+			for(int i = 0; i < ttt.GRIDLINE; i++)
+			{
+				System.out.print(ttt.grid[i]);
+			}
+			System.out.println();
+		}
+	}
+	
+	
+}

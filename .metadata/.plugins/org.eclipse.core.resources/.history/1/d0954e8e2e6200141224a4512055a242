@@ -18,18 +18,5 @@ public class TicTacToe
 		return new String(grid);
 	}
 	
-	public static void main(String[] args)
-	{
-		TicTacToe ttt = new TicTacToe();
-		for(int j = 0; j < ttt.GRIDLINE; j++)
-		{
-			for(int i = 0; i < ttt.GRIDLINE; i++)
-			{
-				System.out.print(ttt.grid[i]);
-			}
-			System.out.println();
-		}
-	}
-	
 
 }

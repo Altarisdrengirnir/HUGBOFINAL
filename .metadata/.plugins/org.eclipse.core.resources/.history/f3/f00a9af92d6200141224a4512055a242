@@ -2,6 +2,7 @@ package Altaris;
 
 public class TicTacToe
 {
+	private final int GRIDROWSIZE = 9;
 	private final int GRIDLINE = 3;
 	public char grid[];
 	public char turn;
@@ -13,23 +14,12 @@ public class TicTacToe
 		this.turn = 'X';
 	}
 	
-	public String toString()
-	{
-		return new String(grid);
-	}
-	
 	public static void main(String[] args)
 	{
 		TicTacToe ttt = new TicTacToe();
-		for(int j = 0; j < ttt.GRIDLINE; j++)
+		for(int i = 0; i < ttt.GRIDLINE; i++)
 		{
-			for(int i = 0; i < ttt.GRIDLINE; i++)
-			{
-				System.out.print(ttt.grid[i]);
-			}
-			System.out.println();
+			System.out.print(ttt.grid[i]);
 		}
 	}
-	
-
 }
